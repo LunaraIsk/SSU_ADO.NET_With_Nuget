@@ -1,0 +1,12 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE GetAllInventory 
+AS
+BEGIN
+	SELECT S.IdInventory, 
+	   S.Name 
+		FROM dbo.Inventory S
+END
+GO

@@ -1,0 +1,32 @@
+﻿@model IEnumerable<_1b.IskalievaLE.Entities.Request>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>List Requests</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>DateOfCreation</th>
+            <th>Id_Inventory</th>
+            <th>Amount</th>
+            <th>Comment</th>
+        </tr>
+        <
+    </thead>>
+    <tbody>
+        @foreach (var request in Model)
+        {
+            <tr>
+                <td>@request.DateOfCreation</td>
+                <td>@request.Id_Inventory</td>
+                <td>@request.Amount</td>
+                <td>@request.Comment</td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+

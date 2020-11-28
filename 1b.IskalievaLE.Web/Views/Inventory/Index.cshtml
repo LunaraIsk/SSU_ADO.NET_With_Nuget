@@ -1,0 +1,26 @@
+﻿@model IEnumerable<_1b.IskalievaLE.Entities.Inventory>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>List Inventory</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+        </tr>
+        <
+    </thead>>
+    <tbody>
+        @foreach (var inventory in Model)
+        {
+            <tr>
+                <td>@inventory.Name</td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+
